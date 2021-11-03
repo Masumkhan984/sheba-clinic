@@ -1,0 +1,19 @@
+.Quality{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.img-section{
+  width: 100%;
+}
+.text-section{
+  margin: 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .Quality{
+      flex-direction: column-reverse;
+  }
+}
