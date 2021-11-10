@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner';
 import './Home.css';
 import Services from '../Services/Services/Services';
 import Counter from '../Counter/Counter';
-import Patients from '../Patients/Patients';
+import Doctors from '../Doctors/Doctors';
 import Contact from '../Contacts/Contact';
 
 const Home = () => {
@@ -13,8 +13,8 @@ const Home = () => {
             <Banner></Banner>
             <Quality></Quality>
             <Services></Services>
+            <Doctors></Doctors>
             <Counter></Counter>
-            <Patients></Patients>
             <Contact></Contact>
         </div>
     );

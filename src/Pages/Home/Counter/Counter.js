@@ -1,17 +1,18 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 import './Counter.css'
 
 const Counter = () => {
     return (
-        <>
+        <div id="C">
         <h1>______________________</h1>
         <div className="main">
             <Container className="count">
             <div>
                 <h1>Over 55,100 patients trust us</h1>
-                <Button variant="outline-warning">Make An Appointment</Button>
+              <Link to="/home#doctors"><Button variant="outline-warning">Make An Appointment</Button></Link>
             </div>
             <div>
                 <div className="half">
@@ -37,7 +38,7 @@ const Counter = () => {
             </div> 
          </Container>
         </div>
-    </>
+    </div>
     );
 };
 

@@ -7,7 +7,7 @@ const Contact = () => {
 
     return (
         <Container>
-    <div className="contact">
+    <div className="contact" id="contact">
          <div className="contact-form">
             <img src={img} alt="" style={{width:"100%"}}/>
          </div>

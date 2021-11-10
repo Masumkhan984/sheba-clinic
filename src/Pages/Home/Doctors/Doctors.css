@@ -1,24 +1,18 @@
 .doctor-appointment{
     background-color: rgb(210, 211, 216);
 }
-.main-patient{
+.main-Doctor{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.form{
-    display: flex;
-    width: 60%;
-    height: 100%;
-    background-color: rgb(194, 217, 243);
-}
-.patients{
+.doctors{
     width: 100%;
     height: 1000;
 }
 @media only screen and (max-width: 800px) {
-    .main-patient{
+    .main-Doctor{
         flex-direction: column-reverse;
     }
 }

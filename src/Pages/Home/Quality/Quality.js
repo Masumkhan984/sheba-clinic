@@ -12,22 +12,22 @@ const Quality = () => {
         .then(data =>setServices(data))
     },[])
     return (
-            <Container>
-                    <h1 style={{margin:"20px", color:"#954535"}}>Best Qualities Of Our Clinic</h1>
+        <Container>
+            <h1 style={{margin:"20px", color:"#954535"}}>Best Qualities Of Our Clinic</h1>
         <div className="Quality">
             <div className="text-section">
-            <Row xs={2} md={2} className="g-4">
-            {
-              services.map(Quality=><QualityDetails
-              key={Quality.id}
-              Quality={Quality}></QualityDetails>)}
-          </Row>
+                <Row xs={2} md={2} className="g-4">
+                    {
+                    services.map(Quality=><QualityDetails
+                    key={Quality.id}
+                    Quality={Quality}></QualityDetails>)}
+               </Row>
             </div>
             <div className="img-section">
-                 <img src={img} alt="" width="100%"/> 
+                    <img src={img} alt="" width="100%"/> 
             </div>
         </div>
-        </Container>
+      </Container>
     );
 };
 

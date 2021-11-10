@@ -1,11 +1,11 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Container } from 'react-bootstrap';
 
-const Patient = props => {
-    console.log(props.patient)
-    const {name, img, Qualification} = props.patient
+const Doctor = props => {
+    const {name, img, Qualification} = props.doctor
     return (
         <div>
+            <Container>
                 <Col>
                 <Card>
                     <Card.Img variant="top" src={img} style={{ borderRadius:"50%"}} className="rounded"/>
@@ -15,13 +15,17 @@ const Patient = props => {
                        <h6> {Qualification}</h6>
                     </Card.Text>
                     <Card.Text>
-                        
+                    <i className="fab fa-instagram-square"/><span> </span><i className="fab fa-facebook"/>
+                    <span> </span><i className="fab fa-twitter-square"/>
+                    <span> </span>
+                    <i className="fab fa-linkedin"/>
                     </Card.Text>
                     </Card.Body>
                 </Card>
                 </Col>
+            </Container>
         </div>
     );
 };
 
-export default Patient;
+export default Doctor;

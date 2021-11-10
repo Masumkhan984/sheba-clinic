@@ -7,7 +7,7 @@ const QualityDetails = props => {
         <div>
       <Col>
       <Card style={{backgroundColor:"#C0F9D7"}}>
-      <i class={icon}></i>
+      <i className={icon}/>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>

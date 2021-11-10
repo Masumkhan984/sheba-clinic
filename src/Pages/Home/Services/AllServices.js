@@ -4,7 +4,6 @@ import { useHistory } from 'react-router';
 import Service from './Service/Service';
 
 const AllServices = () => {
-    const history = useHistory(); 
     const [services, setServices] = useState([])
     useEffect(()=>{
         fetch('https://raw.githubusercontent.com/Masumkhan984/fackData/main/medicalSite/Services.json')
@@ -12,9 +11,6 @@ const AllServices = () => {
         .then(data => setServices(data))
     },[])
 
-    const handleClick =() =>{
-        history.push('/home#services')
-    }
     return (
         <div id="services">
         <Container>
@@ -26,7 +22,6 @@ const AllServices = () => {
                 service={service}></Service>)
             }
            </Row>
-           <Button onClick={handleClick} style={{marginTop:"10px"}}variant="outline-info">See our more Services --->> </Button>
            </Container>
         </div>
     );

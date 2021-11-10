@@ -1,0 +1,15 @@
+.details{
+    display: flex;
+}
+.schedule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.half{
+    width: 100%;
+}
+.schedule-book{
+    width: 100%;
+}

@@ -1,0 +1,7 @@
+.error-page{
+    background: url("https://i.ibb.co/bdZ09ww/404.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
